@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Auto-product-excel-machine</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div class="conatiner mt-5">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 card bg-danger  text-white" id="notify_text">
+                Si prega di importare prima "Cyberport.xlsx" (importante).
+            </div>
+            <div class="col-md-3"></div>
+            <br>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <input class="form-control" style="height: 43px;" type="file" id="input" accept=".xls,.xlsx">
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary center" id="button" style="display: block;">
+                    Convert
+                </button>
+                <button class="btn btn-primary" disabled id="button_loading" style="display: none;">
+                    <span class="spinner-grow spinner-grow-sm"></span>
+                    Converting..
+                </button>
+                <button type="button" class="btn btn-primary" disabled id="button_done" style="display: none;">
+                    Converted.
+                </button>
+            </div>
+            <div class="col-md-3">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 card bg-success text-white" id="wait_div">
+                Welcome.
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.1/xlsx.full.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="main_machine.js"></script>
+</html>
